@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+}
+
+.brand {
+  height: 20vh;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 7vh;
+}
+
+.main {
+  position: relative;
+  border: solid 5px;
+  border-radius: 15px;
+  border-color: rgba(0, 0, 0, 0.507);
+  height: 400px;
+  width: 300px;
+  margin: auto;
+  background-color: rgba(132, 248, 248, 0.685);
+  text-align: center;
+  overflow: hidden;
+}
+
+.main-night {
+  background: rgba(1, 0, 51, 0.822);
+  color: white;
+  position: relative;
+  border: solid 5px;
+  border-radius: 15px;
+  border-color: rgba(0, 0, 0, 0.507);
+  height: 400px;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* stars in night -> */
+#stars li {
+  position: absolute;
+  color: transparent;
+}
+
+#stars li div {
+  background-color: white;
+  border-radius: 50px;
+}
+
+#stars li:nth-child(1) {
+  top: 50%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 3s;
+}
+
+#stars li:nth-child(1) div {
+  height: 3px;
+  width: 3px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 3s;
+}
+
+#stars li:nth-child(2) {
+  top: 70%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 2s;
+}
+
+#stars li:nth-child(2) div {
+  height: 1px;
+  width: 1px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 2s;
+}
+
+#stars li:nth-child(3) {
+  top: 10%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 4s;
+}
+
+#stars li:nth-child(3) div {
+  height: 2px;
+  width: 2px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 4s;
+}
+
+#stars li:nth-child(4) {
+  top: 2%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 7s;
+}
+
+#stars li:nth-child(4) div {
+  height: 3px;
+  width: 3px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 7s;
+}
+
+#stars li:nth-child(5) {
+  top: 90%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 15s;
+}
+
+#stars li:nth-child(5) div {
+  height: 3px;
+  width: 3px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 15s;
+}
+
+#stars li:nth-child(6) {
+  top: 25%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+}
+
+#stars li:nth-child(6) div {
+  height: 3px;
+  width: 3px;
+  animation: yAxisStar 15s infinite ease-in-out;
+}
+
+#stars li:nth-child(7) {
+  top: 40%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 10s;
+}
+
+#stars li:nth-child(7) div {
+  height: 3px;
+  width: 3px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 10s;
+}
+
+#stars li:nth-child(8) {
+  top: 35%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 12s;
+}
+
+#stars li:nth-child(8) div {
+  height: 3px;
+  width: 3px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 12s;
+}
+
+#stars li:nth-child(9) {
+  top: 60%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 8s;
+}
+
+#stars li:nth-child(9) div {
+  height: 3px;
+  width: 3px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 8s;
+}
+
+#stars li:nth-child(10) {
+  top: 72%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 9s;
+}
+
+#stars li:nth-child(10) div {
+  height: 3px;
+  width: 3px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 9s;
+}
+
+#stars li:nth-child(11) {
+  top: 66%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 6s;
+}
+
+#stars li:nth-child(11) div {
+  height: 3px;
+  width: 3px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 6s;
+}
+
+#stars li:nth-child(12) {
+  top: 55%;
+  right: -20px;
+  animation: xAxisStar 15s infinite linear;
+  animation-delay: 7s;
+}
+
+#stars li:nth-child(12) div {
+  height: 3px;
+  width: 3px;
+  animation: yAxisStar 15s infinite ease-in-out;
+  animation-delay: 7s;
+}
+/* <- stars in night */
+
+/* clouds -> */
+#clouds li {
+  opacity: 0.7;
+  position: absolute;
+  color: transparent;
+}
+
+#clouds li:nth-child(1) {
+  right: -20px;
+  top: 32%;
+  animation: clouds 20s infinite linear;
+}
+
+#clouds li:nth-child(2) {
+  right: -20px;
+  top: 22%;
+  animation: clouds 20s infinite linear;
+  animation-delay: 5s;
+}
+
+#clouds li:nth-child(3) {
+  right: -20px;
+  top: 10%;
+  animation: clouds 20s infinite linear;
+  animation-delay: 10s;
+}
+
+#clouds li:nth-child(4) {
+  right: -20px;
+  top: 20%;
+  animation: clouds 20s infinite linear;
+  animation-delay: 12s;
+}
+
+#clouds li:nth-child(5) {
+  right: -20px;
+  top: 15%;
+  animation: clouds 20s infinite linear;
+  animation-delay: 16s;
+}
+
+.cloud-container,
+.small-cloud-container {
+  position: relative;
+}
+
+.cloud-container div,
+.small-cloud-container div {
+  background-color: rgb(255, 255, 255);
+}
+
+.cloud-container .small-circle {
+  left: 10px;
+  top: 10px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+}
+
+.cloud-container .big-circle {
+  left: 25px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.cloud-container .lower-rectangle {
+  top: 15px;
+  left: 3px;
+  position: absolute;
+  height: 30px;
+  width: 70px;
+  border-radius: 50px;
+}
+
+.small-cloud-container .small-circle {
+  left: 12px;
+  top: 10px;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+}
+
+.small-cloud-container .big-circle {
+  left: 25px;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+}
+
+.small-cloud-container .lower-rectangle {
+  top: 15px;
+  left: 3px;
+  position: absolute;
+  height: 20px;
+  width: 60px;
+  border-radius: 50px;
+}
+/* <- clouds */
+
+.weather-sym {
+  width: 200px;
+  height: 150px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.sun-outer {
+  position: absolute;
+  top: 10%;
+  right: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+.sun {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  animation: sunshine 5s ease-in-out infinite;
+  background-color: rgb(250, 253, 74);
+  box-shadow: 0px 0px 20px 20px rgba(255, 255, 0, 0.363);
+  position: relative;
+  overflow: hidden;
+}
+
+.moon-outer {
+  position: absolute;
+  top: 10%;
+  right: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+.moon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  animation: moonshine 10s ease-in-out infinite;
+  background-color: rgb(230, 224, 224);
+  box-shadow: 0px 0px 8px 10px rgba(235, 235, 231, 0.301);
+  position: relative;
+  overflow: hidden;
+}
+
+.moon li {
+  color: transparent;
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.moon li:nth-child(1) {
+  top: 20px;
+  left: 40px;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 2px 0 4px rgba(167, 167, 167, 0.685);
+}
+
+.moon li:nth-child(2) {
+  top: 70px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 2px 0 4px rgba(167, 167, 167, 0.685);
+}
+
+.moon li:nth-child(3) {
+  top: 55px;
+  left: 80px;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 2px 0 4px rgba(167, 167, 167, 0.685);
+}
+
+.moon li:nth-child(4) {
+  top: 40px;
+  left: 60px;
+  width: 10px;
+  height: 10px;
+  box-shadow: inset 2px 0 4px rgba(167, 167, 167, 0.585);
+}
+
+.moon li:nth-child(5) {
+  top: 40px;
+  left: -4px;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 2px 0 4px rgba(167, 167, 167, 0.585);
+}
+
+.temp-frame {
+  height: auto;
+  margin-top: 30px;
+}
+
+#temp-button {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#temp {
+  margin-right: 0px;
+  margin-left: 5px;
+  font-size: 52px;
+}
+
+#change-button {
+  position: absolute;
+  padding-top: 15px;
+  right: 40px;
+}
+
+#change-button button {
+  margin: auto;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#min-max {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#name {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.footer {
+  bottom: 5px;
+  position: absolute;
+  left: 21%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(0, 110, 255);
+}
+
+#note {
+  font-size: 12px;
+}
+
+/* animation */
+
+@keyframes xAxisStar {
+  0% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-150px);
+  }
+  90% {
+    transform: translateX(-350px);
+  }
+  100% {
+    transform: translateX(-500px);
+  }
+}
+
+@keyframes yAxisStar {
+  30% {
+    background-color: white;
+  }
+  31% {
+    background-color: rgba(255, 255, 255, 0.26);
+  }
+  50% {
+    background-color: white;
+    transform: translateY(-25px);
+  }
+  60% {
+    background-color: rgba(255, 255, 255, 0.253);
+  }
+  65% {
+    background-color: white;
+  }
+}
+
+@keyframes moonshine {
+  50% {
+    box-shadow: 0px 0px 8px 2px rgb(235, 235, 231);
+  }
+}
+
+@keyframes sunshine {
+  50% {
+    box-shadow: 0px 0px 8px 2px rgb(253, 240, 61);
+  }
+}
+
+@keyframes clouds {
+  100% {
+    transform: translateX(-600px);
+  }
+}

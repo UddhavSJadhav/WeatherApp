@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--CSS-->
+    <link href="index.css" rel="stylesheet" />
+
+    <title>Weather App</title>
+  </head>
+  <body onload="getLocation()" id="body">
+    <div class="brand">
+      <h1>Weather App</h1>
+    </div>
+
+    <div class="main" id="main">
+      <!--Animation stuff begin-->
+      <ul id="stars">
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+      </ul>
+      <div class="weather-sym">
+        <div class="sun-outer" id="sun-container">
+          <div class="sun"></div>
+        </div>
+        <div class="moon-outer" id="moon-container">
+          <ul class="moon">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <ul id="clouds">
+        <li>
+          <div class="cloud-container">
+            <div class="small-circle"></div>
+            <div class="big-circle"></div>
+            <div class="lower-rectangle"></div>
+          </div>
+        </li>
+        <li>
+          <div class="cloud-container">
+            <div class="small-circle"></div>
+            <div class="big-circle"></div>
+            <div class="lower-rectangle"></div>
+          </div>
+        </li>
+        <li>
+          <div class="cloud-container">
+            <div class="small-circle"></div>
+            <div class="big-circle"></div>
+            <div class="lower-rectangle"></div>
+          </div>
+        </li>
+        <li>
+          <div class="small-cloud-container">
+            <div class="small-circle"></div>
+            <div class="big-circle"></div>
+            <div class="lower-rectangle"></div>
+          </div>
+        </li>
+        <li>
+          <div class="small-cloud-container">
+            <div class="small-circle"></div>
+            <div class="big-circle"></div>
+            <div class="lower-rectangle"></div>
+          </div>
+        </li>
+      </ul>
+      <!--Animation stuff end-->
+
+      <div class="temp-frame">
+        <div id="demo">
+          <h3 id="desc"></h3>
+          <div id="temp-button">
+            <h2 id="temp"></h2>
+            <div id="change-button">
+              <button id="celsius" onclick="changeTempType(condiTion = true)">
+                °C
+              </button>
+              <button
+                id="fahrenheit"
+                onclick="changeTempType(condiTion = false)"
+              >
+                °F
+              </button>
+            </div>
+          </div>
+          <div id="min-max">
+            <p id="temp_min"></p>
+            <p id="temp_max"></p>
+          </div>
+          <h4 id="name"></h4>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          Dev -
+          <a href="https://github.com/UddhavSJadhav">Uddhav Jadhav</a> 2021
+          <sup>©</sup>
+        </p>
+        <p id="note">*location shown might not be accurate</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
