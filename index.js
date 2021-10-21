@@ -55,7 +55,7 @@ function displayTemp(data) {
 }
 
 function showPosition(position) {
-  let wapi = `http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=c00d27541c75cbec8614c39a843061d6&units=metric`;
+  let wapi = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=c00d27541c75cbec8614c39a843061d6&units=metric`;
   fetch(wapi)
     .then((response) => response.json())
     .then((data) => displayTemp(data));
