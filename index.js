@@ -62,7 +62,7 @@ function showPosition(position) {
 }
 
 function bodyColor(temp, weather_desc) {
-  var weather_desc_regex = /clear|haze|storm|mist|cloudy/;
+  var weather_desc_regex = /clear|haze|storm|mist|smoke|cloudy/;
   if (temp > 34) {
     body.setAttribute(
       "style",

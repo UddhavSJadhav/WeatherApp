@@ -436,6 +436,12 @@ h1 {
   font-size: 52px;
 }
 
+@media (max-width: 400px) {
+  #temp {
+    font-size: 47px;
+  }
+}
+
 #change-button {
   position: absolute;
   padding-top: 15px;
@@ -462,7 +468,7 @@ h1 {
 .footer {
   bottom: 5px;
   position: absolute;
-  left: 21%;
+  width: 100%;
 }
 
 .footer a {
